@@ -16,6 +16,19 @@
 
 	$(function() {
 
+		window.addEventListener('load', function(){
+			new Glider(document.querySelector('.carousel__lista'),{
+				slicesToShow: 1,
+				slicesToScroll: 1,
+				dots: '.carousel__indicadores',
+				arrows:{
+					prev: '.carousel__anterior',
+					next: '.carousel__siguiente'
+				}
+		
+			})
+		})
+
 		var	$window = $(window),
 			$body = $('body'),
 			$header = $('#header'),

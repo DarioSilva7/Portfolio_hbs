@@ -25,7 +25,11 @@ app.get('/about',(req,res)=>{
     })
 })
 
-
+app.get('/proyectos',(req,res)=>{
+    res.render('projects', {
+        title: 'Portfolio Dario Silva'
+    })
+})
 
 
 app.listen(port, ()=>{
