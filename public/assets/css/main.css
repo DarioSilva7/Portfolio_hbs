@@ -101,7 +101,11 @@
 	}
 	.project{
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
 	}
 	 /* IMG */
 	 img {
@@ -121,7 +125,12 @@
 .gli{
 	margin: 1.2rem;
 }
-
+.proj{
+	margin: 1.5rem;
+}
+.proj> img{
+	height: 240px;
+}
 .carousel__contenedor{
 	position: relative;
 }
@@ -1757,7 +1766,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
