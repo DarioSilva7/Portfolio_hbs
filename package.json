@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+  "minify-css": "clean-css -o public/styles.min.css public/styles.css",
+  "minify-utiljs": "uglifyjs -o public/assets/js/util.min.js public/assets/js/util.js",
+  "minify-mainjs": "uglifyjs -o public/assets/js/main.min.js public/assets/js/main.min.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,8 @@
     "hbs": "^4.2.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "clean-css": "^5.3.3",
+    "nodemon": "^3.0.2",
+    "uglify-js": "^3.17.4"
   }
 }
